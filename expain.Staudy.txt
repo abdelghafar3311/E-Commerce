@@ -1,0 +1,12 @@
+Hi Abdo!
+ In Fact, You very intelligent because you can work this project by alone but 
+you need know how make this project to make like it.
+folder/page => {
+    New folder/AllCategory => file/(this);
+}
+
+folder/component => {
+    folder/Category => {
+        New file/CategoryContainer.js
+    }
+}

@@ -1,0 +1,5 @@
+the icons used in this project:
+[1] FcSalesPerformance /{import { FaServicestack } from "react-icons/fa";}/ =? this logo system
+[2] FaSistrix /{import { FaSistrix } from "react-icons/fa";}/ =? this search icon 
+[3] FiAlignLeft /{import { FiAlignLeft } from "react-icons/fi";}/ =? this list open and close list 
+

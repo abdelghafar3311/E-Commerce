@@ -1,0 +1,21 @@
+.a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 140px;
+    border-radius: 8px;
+    background: linear-gradient(45deg,#2b2c2e,#494e50,#202324);
+    direction: rtl;
+    color: #fff;
+}
+
+.icon{
+    width: 120px;
+    height: 120px;
+}
+
+.s{
+    letter-spacing: 0;
+    font-weight: 800;
+    color: #fff;
+}

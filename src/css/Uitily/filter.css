@@ -1,0 +1,81 @@
+.Filter-container{
+    background-color: #fff;
+    padding: 10px;
+}
+.title-items{
+    display: flex;
+}
+.Branch-items{
+    display: flex;
+}
+.Price-filters{
+    display: flex;
+}
+.Price-items{
+    display: flex;
+}
+/* this md */
+@media (max-width: 992px){
+    .Filter-container{
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        align-items: center;
+        gap: 10px;
+        padding: 0px;
+    }
+    .title-filters{
+        flex-direction: row;
+        align-items: center;
+        gap:5px;
+    }
+    .Branch-filters{
+        flex-direction: row;
+        align-items: center;
+        gap:5px;
+    }
+    .Price-filters{
+        flex-direction: row;
+        align-items: center;
+        gap:5px;
+    }
+    .title-items{
+        flex-direction: row;
+        align-items: center;
+        gap:15px;
+    }
+    .Branch-items{
+        flex-direction: row;
+        align-items: center;
+        gap:5px;
+    }
+    .Price-items{
+        flex-direction: row;
+        align-items: center;
+        gap:5px;
+    }
+}
+/* this lg */
+@media (min-width: 993px){
+    .title-filters{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .Branch-filters{
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 5px;
+    }
+    .Price-filters{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .title-items{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .Branch-items{
+        flex-direction: column;
+        gap: 10px;
+    }
+}

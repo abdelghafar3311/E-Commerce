@@ -1,0 +1,13 @@
+#dropdown-basic{
+    border-radius: 3px;
+    margin-bottom: 5px;
+    background: transparent;
+    color: #282d38;
+    gap: 5px;
+    border-color: #282d38;
+    direction: rtl;
+}
+
+#dropdown-basic:active{
+    box-shadow: 0 0 0 0 transparent;
+}
