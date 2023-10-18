@@ -14,9 +14,9 @@ function HomePage() {
       <Slider/>
       <SubTitle Name='التصنيفات' path='allCategory' btnName='المزيد'/>
       <FirstCategoryContainer/>
-      <Produce name='الاكثر شهرة' Type='المزيد' Path="products" index={[1,2,3]}/>
+      <Produce name='الاكثر شهرة' Type='المزيد' Path="products?page=0"/>
       <Offer/>
-      <Produce name='الاكثر شعبية' Type='المزيد' Path="products" index={[1,2,3]}/>
+      
       <ComBrand/>
     </div>
   )

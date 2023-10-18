@@ -348,7 +348,7 @@ body {
 /* end products page */
 
 /* pagination */
-.page-link {
+/* .page-link {
   background-color: #f9f9f9 !important;
   color: #272727 !important;
   border-radius: 10px !important;
@@ -358,6 +358,9 @@ body {
   background-color: #272727 !important;
   color: white !important;
   border: solid 1px 272727 !important;
+} */
+.page-item::after,.page-item::before,.page-item {
+  border-radius: 0px !important;
 }
 /* end pagination */
 

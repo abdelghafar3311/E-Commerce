@@ -1,9 +1,20 @@
-import React from 'react';
+import React, {useState,useEffect} from 'react';
 import ReactPaginate from 'react-paginate';
 import '../../css/Pagination/page.css';
-export const Paginate = ({count}) => {
+import FetchData from '../../DataActions/FatchUrl';
+export const Paginate = ({count,page}) => {
 
-    const handlePageClick = () => {}
+    const handlePageClick = (e) => {
+      console.log(e.selected)
+      window.history.pushState(
+        null,
+        "",
+        `?page=${e.selected}`
+      );
+      window.location.reload();
+    }
+    
+    
   return (
     <div>
         <ReactPaginate
@@ -25,6 +36,7 @@ export const Paginate = ({count}) => {
             activeClassName='active'
             breakClassName='page-item'
             breakLinkClassName='page-link'
+            forcePage={page}
         />
     </div>
   )

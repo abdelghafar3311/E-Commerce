@@ -4,12 +4,12 @@ import b from '../../images/home/2.jpg';
 import { AiFillHeart , AiOutlineHeart , AiFillStar } from "react-icons/ai";
 import "../../css/homePage/Prodects.css";
 import { Link } from 'react-router-dom';
-export const Pro = ({text}) => {
+export const Pro = ({text,image,level,price,like,id,page}) => {
 
-    let [Like,setLike] = useState(false);
+    let [Like,setLike] = useState(like);
 
     function setLikeNow() {
-        Like ? setLike(false) : setLike(true);
+        Like? setLike(false) : setLike(true);
     };
 
     function LikeIcon() {
@@ -20,10 +20,13 @@ export const Pro = ({text}) => {
         )
     }
 
+
+   
+
     return (
         <Col xs ='12' sm ="12" md="6" lg="4" xl='3'>
             <Card className='prod_new'>
-                    <Link to='/products/:id'><Card.Img variant="top" src={b} className='imagePro' draggable={false} /></Link>
+                    <a href={`/product?page=${page}&id=${id}`}><Card.Img variant="top" src={image} className='imagePro' draggable={false} /></a>
                     <Card.Body>
                         <Card.Title style={{cursor:'pointer'}} className='like' onClick={() => setLikeNow()}><LikeIcon/></Card.Title>
                     <Card.Text className='text'>
@@ -32,10 +35,10 @@ export const Pro = ({text}) => {
                     <div className='footerPro'>
                         <div className='conStar'>
                             <AiFillStar className='stare text-warning'/>
-                            <span className='text-warning'>4.6</span>
+                            <span className='text-warning'>{level}</span>
                         </div>
                         <div className='price'>
-                            <span className='price_pro'>88</span>
+                            <span className='price_pro'>{price}</span>
                             <span>جنية</span>
                         </div>
                     </div>

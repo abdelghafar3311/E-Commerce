@@ -3,8 +3,13 @@ import { Row } from 'react-bootstrap'
 import '../../css/Uitily/filter.css';
 
 const SideFilter = () => {
+
+  const sub = e => {
+    e.preventDefault();
+  }
+
     return (
-        <div className="Filter-container">
+        <form className="Filter-container" onSubmit={sub}>
           <div className="d-flex title-filters">
             <div className="filter-title">الفئة</div>
             <div className='title-items'>
@@ -69,9 +74,11 @@ const SideFilter = () => {
                     style={{ width: "50px", height: "25px" }}
                   />
                 </div>
+
               </div>
+              <button type='submit' className='btn btn-outline-dark'>بحث</button>
           </div>
-      </div>
+      </form>
     )
 }
 
